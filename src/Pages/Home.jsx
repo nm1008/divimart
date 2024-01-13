@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import TopItems from "./TopItems";
 
 const Home = () => {
   return (
@@ -8,36 +9,36 @@ const Home = () => {
       </h1>
       <div className="h-[100vh] grid md:grid-cols-2 xl:grid-cols-3 gap-2 ">
         <Link
-          to="/products/furniture"
+          to="/products/backpacks"
           className="relative overflow-hidden col-span-2  "
         >
           <img
             className="w-full h-full object-cover  "
-            src="../src/images/furniture.jpg"
+            src="../src/images/backpack.jpg"
           />
           <h1 className="absolute top-0 left-0 bg-slate-900 text-white p-3 font-semibold">
-            Furnitures
+            Backpacks
           </h1>
         </Link>
         <Link
-          to="/products/skincare"
+          to="/products/jewelry"
           className="relative overflow-hidden row-span-2"
         >
           <img
-            className="w-full h-full object-cover  "
-            src="../src/images/skincare.jpg"
+            className="w-full h-full   "
+            src="../src/images/jewelry.jpg"
           />
           <h1 className="absolute top-0 left-0 bg-slate-900 text-white p-3 font-semibold">
-            Skincare
+            Jewelry
           </h1>
         </Link>
-        <Link to="/products/kitchen" className="relative overflow-hidden ">
+        <Link to="/products/clothing" className="relative overflow-hidden ">
           <img
             className="w-full h-full object-cover "
-            src="../src/images/kitchen.jpg"
+            src="../src/images/clothing.jpg"
           />
           <h1 className="absolute top-0 left-0 bg-slate-900 text-white p-3 font-semibold">
-            Kitchen
+            Clothing
           </h1>
         </Link>
         <Link to="/products/gadgets" className="relative overflow-hidden ">
@@ -50,6 +51,7 @@ const Home = () => {
           </h1>
         </Link>
       </div>
+      <TopItems />
     </section>
   );
 };

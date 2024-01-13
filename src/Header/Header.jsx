@@ -14,19 +14,22 @@ const Header = () => {
 
         <div className="flex items-center justify-center w-full md:w-[300px] gap-4 ">
           <NavLink
-            className={`text-md font-semibold bg-slate-900 rounded-md text-white px-3 py-1 flex items-center gap-2`}
+            to="/"
+            className={`text-md font-semibold   rounded-md text-black px-3 py-1 flex items-center gap-2 hover:text-white hover:bg-black hover:transition hover:duration-300`}
           >
-            <FaHouseUser /> Home
+            <FaHouseUser className=" md:text-2xl" /> Home
           </NavLink>
           <NavLink
-            className={`text-md font-semibold bg-slate-900 rounded-md text-white px-3 py-1 flex items-center gap-2`}
+          to="/products"
+            className={`text-md font-semibold  rounded-md text-black e px-3 py-1 flex items-center gap-2 hover:text-white hover:bg-black hover:transition hover:duration-300`}
           >
-            <FaProductHunt /> Products
+            <FaProductHunt className="md:text-2xl" /> Products
           </NavLink>
           <NavLink
-            className={`text-md font-semibold bg-slate-900 rounded-md text-white px-3 py-1 flex items-center gap-2`}
+          to="/cart"
+            className={`text-md font-semibold  rounded-md text-black  px-3 py-1 flex items-center gap-2 hover:text-white hover:bg-black hover:transition hover:duration-300`}
           >
-            <BsCart3 className="text-2xl" />
+            <BsCart3 className="text-xl md:text-2xl" />
           </NavLink>
         </div>
       </nav>

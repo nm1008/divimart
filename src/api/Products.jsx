@@ -43,7 +43,7 @@ const Products = [
     name: "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
     description: "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl.",
     type: "jewelry",
-    price: 3500,
+    price: 5000,
   },
   {
     id: 6,
@@ -61,7 +61,7 @@ const Products = [
     name: "White Gold Plated Princess",
     description: "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her.",
     type: "jewelery",
-    price: 3500,
+    price: 6000,
   },
   {
     id: 8,
@@ -70,7 +70,7 @@ const Products = [
     name: "WD 2TB Elements Portable External Hard Drive - USB 3.0",
     description: "USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High Capacity",
     type: "electronics",
-    price: 1700,
+    price: 3200,
   },
 ];
 

@@ -32,8 +32,8 @@ const TopItems = () => {
               </Link>
 
               <div className="p-2 flex flex-col">
-                <h1 className="font-semibold">{items.name}</h1>
-                <p>{items.description}</p>
+                <h1 className="font-semibold mb-2">{items.name}</h1>
+                <p className="mb-2">{items.description}</p>
                 <span className="font-semibold tracking-wide">
                   ₱ {items.price}.00
                 </span>

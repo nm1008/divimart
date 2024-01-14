@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
-import TopItems from "./TopItems";
+import TopItems from "../components/TopItems";
+import CallToAction from "../components/CallToAction";
+import CarouselPromotion from "../components/CarouselPromotion";
 
 const Home = () => {
   return (
@@ -52,6 +54,8 @@ const Home = () => {
         </Link>
       </div>
       <TopItems />
+      <CallToAction />
+      <CarouselPromotion />
     </section>
   );
 };

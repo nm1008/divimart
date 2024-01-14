@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
       <section className="my-10 mx-auto md:w-[80%] w-[90%] relative">
-        <h1 className=" text-3xl text-center italic mb-10 font-semibold sm:block md:hidden">
+        <h1 className=" text-3xl text-center  mb-10 font-semibold sm:block md:hidden">
           Divimart<span className="absolute"> 🛒</span>{" "}
         </h1>
         <div className="h-[100vh] grid md:grid-cols-2 xl:grid-cols-3 gap-2 ">

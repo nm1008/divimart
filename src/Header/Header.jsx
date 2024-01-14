@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <section>
       <nav className="flex items-center justify-center md:justify-between gap-5 rounded-b-xl bg-white shadow-md py-5 px-5 md:px-10  top-0 mx-auto md:w-[100%] w-[100%] ">
-        <h1 className=" text-xl text-center italic font-semibold md:block hidden">
+        <h1 className=" text-2xl text-center  font-semibold md:block hidden">
           DiviMart<span className="absolute mr-5">🛒</span>
         </h1>
 

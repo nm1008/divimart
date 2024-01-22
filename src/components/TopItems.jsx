@@ -11,7 +11,7 @@ const TopItems = () => {
       <h1 className="font-bold text-2xl text-slate-900 tracking-wide">
         Top Items this season
       </h1>
-      <div className="grid sm:grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-5 mt-5">
+      <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-5 mt-5">
         {filterItems.map((items) => {
           return (
             <div

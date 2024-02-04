@@ -20,7 +20,7 @@ const Header = () => {
             <FaHouseUser className=" md:text-2xl" /> Home
           </NavLink>
           <NavLink
-          to="/products"
+          to="/products/AllProducts"
             className={`text-md font-semibold  rounded-md text-black e px-3 py-1 flex items-center gap-2 hover:text-white hover:bg-black hover:transition hover:duration-300`}
           >
             <FaProductHunt className="md:text-2xl" /> Products

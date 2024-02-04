@@ -11,6 +11,7 @@ import Backpack from './Pages/Categories/Backpack'
 import Electronics from "./Pages/Categories/Electronics";
 import Jewelry from "./Pages/Categories/Jewelry";
 import MensClothing from "./Pages/Categories/MensClothing";
+import Footer from "./components/Footer";
 
 function App() {
   const [ cartItem, setCartItem ] = useState([])
@@ -29,7 +30,7 @@ function App() {
         </Route>
         <Route path="/cart" element={<AddToCart />} />
       </Routes>
-     
+     <Footer />
     </>
   );
 }

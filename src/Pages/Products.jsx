@@ -17,7 +17,6 @@ const Products = () => {
             onClick={() => handleItemName("All Products")}
             className={`px-2 w-[100px] h-[55px] flex flex-col items-center justify-center text-center bg-slate-900 text-white rounded-md shadow-md focus:bg-white focus:text-slate-900 hover:bg-white hover:text-slate-900 hover:scale-105 transition`}
           >
-            
             All
           </NavLink>
           <NavLink
@@ -25,7 +24,6 @@ const Products = () => {
             onClick={() => handleItemName("Backpack")}
             className={`px-2 w-[100px] h-[55px] flex flex-col items-center justify-center text-center bg-slate-900 text-white rounded-md shadow-md focus:bg-white focus:text-slate-900 hover:bg-white hover:text-slate-900 hover:scale-105 transition`}
           >
-            
             Backpack
           </NavLink>
           <NavLink
@@ -33,7 +31,6 @@ const Products = () => {
             onClick={() => handleItemName("Electronics")}
             className={`px-2 w-[100px] h-[55px] flex flex-col items-center justify-center text-center bg-slate-900 text-white rounded-md shadow-md focus:bg-white focus:text-slate-900 hover:bg-white hover:text-slate-900 hover:scale-105 transition`}
           >
-            
             Electronics
           </NavLink>
           <NavLink
@@ -41,7 +38,6 @@ const Products = () => {
             onClick={() => handleItemName("Jewelry")}
             className={`px-2 w-[100px] h-[55px] flex flex-col items-center justify-center text-center bg-slate-900 text-white rounded-md shadow-md focus:bg-white focus:text-slate-900 hover:bg-white hover:text-slate-900 hover:scale-105 transition`}
           >
-            
             Jewelry
           </NavLink>
           <NavLink
@@ -49,10 +45,8 @@ const Products = () => {
             onClick={() => handleItemName("Men's Clothing")}
             className={`px-2 w-[120px] h-[55px] flex flex-col items-center justify-center text-center bg-slate-900 text-white rounded-md shadow-md focus:bg-white focus:text-slate-900 hover:bg-white hover:text-slate-900 hover:scale-105 transition`}
           >
-           
             Men&#39;s Clothing
           </NavLink>
-         
         </div>
 
         <Outlet />

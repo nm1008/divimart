@@ -8,8 +8,6 @@ const Electronics = () => {
     (items) => items.category === "electronics"
   );
 
-  const { addToCart } = useContext(CartContext);
-
   return (
     <section className=" mt-5 grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2">
       {filterItems.map((items) => {
@@ -22,11 +20,11 @@ const Electronics = () => {
               onClick={() => window.top(0, 0)}
               to={`/categories/product/${items.id}`}
             >
-              <div className="h-[300px]">
+              <div className="h-[200px] flex justify-center">
                 <img
-                  className="w-full h-full object-cover rounded-t-md"
-                  src={items.img}
-                  alt=""
+                  className="h-full rounded-t-md p-4 "
+                  src={items.image}
+                  alt={items.name}
                 />
               </div>
             </Link>
@@ -36,9 +34,9 @@ const Electronics = () => {
               <p>{items.description}</p>
               <span className="font-bold">₱{items.price}.00</span>
               <button
-                onClick={() => {
-                  addToCart(items);
-                }}
+                // onClick={() => {
+                //   addToCart(items);
+                // }}
                 className="bg-slate-900 text-white mt-2 py-1"
               >
                 Add to Cart

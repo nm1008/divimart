@@ -8,8 +8,6 @@ const MensClothing = () => {
     (items) => items.category === "backpack"
   );
 
-  const { addToCart } = useContext(CartContext);
-
   return (
     <section className=" mt-5 grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2">
       {filterItems.map((items) => {
@@ -22,13 +20,13 @@ const MensClothing = () => {
               onClick={() => window.top(0, 0)}
               to={`/categories/product/${items.id}`}
             >
-              <div className="h-[300px]">
-                <img
-                  className="w-full h-full object-cover rounded-t-md"
-                  src={items.img}
-                  alt=""
-                />
-              </div>
+              <div className="h-[200px] flex justify-center">
+                  <img
+                    className="h-full rounded-t-md p-4 "
+                    src={items.image}
+                    alt={items.name}
+                  />
+                </div>
             </Link>
 
             <div className="p-2 flex flex-col">

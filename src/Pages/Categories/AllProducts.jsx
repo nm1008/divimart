@@ -4,8 +4,6 @@ import { CartContext } from "../../Hooks/CartContext";
 import { Link } from "react-router-dom";
 
 const AllProducts = () => {
-  const { addToCart } = useContext(CartContext);
-
   return (
     <div className=" mt-5 grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
       {Products.map((items) => {
@@ -18,11 +16,11 @@ const AllProducts = () => {
               onClick={() => window.top(0, 0)}
               to={`/categories/product/${items.id}`}
             >
-              <div className="h-[300px]">
+              <div className="h-[200px] flex justify-center">
                 <img
-                  className="w-full h-full object-cover rounded-t-md"
-                  src={items.img}
-                  alt=""
+                  className="h-full rounded-t-md p-4 "
+                  src={items.image}
+                  alt={items.name}
                 />
               </div>
             </Link>

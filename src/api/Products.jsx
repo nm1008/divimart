@@ -39,7 +39,7 @@ const Products = [
   {
     id: 5,
     image: "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
-    category: "jewelery",
+    category: "jewelry",
     name: "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
     description: "The Naga was inspired by the mythical water dragon that protects the ocean's pearl.",
     type: "jewelry",
@@ -57,10 +57,10 @@ const Products = [
   {
     id: 7,
     image: "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
-    category: "jewelery",
+    category: "jewelry",
     name: "White Gold Plated Princess",
     description: "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her.",
-    type: "jewelery",
+    type: "jewelry",
     price: 6000,
   },
   {

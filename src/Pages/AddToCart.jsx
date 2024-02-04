@@ -1,8 +1,15 @@
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+
+import { CartContext } from "../Hooks/CartContext";
+
 
 const AddToCart = () => {
+
+  const { quantity, cartItem } = useContext(CartContext)
+
   return (
-    <section className="mt-40 m-auto w-[90%] md:w-[80%]   p-10">
+    <section className="mt-40 m-auto w-[90%] md:w-[80%]  p-10">
       <main>
       <h1 className="text-3xl font-semibold tracking-wide">
           Your Cart ({cartItem.length}) 🛒 {/*Show the Number of Items in the Cart */}
@@ -16,7 +23,7 @@ const AddToCart = () => {
               <div className="sm:w-[300px] md:w-[350px] mt-20">
                 <img
                   className="w-full h-full object-cover"
-                  src="/others/empty-cart.svg"
+                  src="../src/images/empty-cart.svg"
                   alt=""
                 />
               </div>
@@ -27,11 +34,13 @@ const AddToCart = () => {
               </Link>
             </div>
           ) : (
-            <ItemCarts />
+            // <ItemCarts />
+            <h1>Cart Items</h1>
           )}
           <div className="text-end mt-10 ">
               <h1 className='font-bold text-2xl'>Subtotal:</h1>
-              <p className='font-semibold text-xl'>₱ {totalPrice + ".00"}</p>
+              {/* <p className='font-semibold text-xl'>₱ {totalPrice + ".00"}</p> */}
+
           </div>
         </div>
       </main>

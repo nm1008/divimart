@@ -1,9 +1,10 @@
-import { useContext } from "react";
 import Products from "../../api/Products";
-import { CartContext } from "../../Hooks/CartContext";
 import { Link } from "react-router-dom";
+import useStore from "../../zustand/store";
 
 const AllProducts = () => {
+  const { addToCart } = useStore();
+
   return (
     <div className=" mt-5 grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
       {Products.map((items) => {

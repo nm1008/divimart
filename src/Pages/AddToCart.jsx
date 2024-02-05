@@ -1,9 +1,14 @@
 import { Link } from "react-router-dom";
 import ItemsCart from "../components/ItemsCart";
 import useStore from "../zustand/store";
+import { useEffect } from "react";
 
 const AddToCart = () => {
- const {cartItems, quantity } = useStore()
+  const { cartItems, total, getTotal } = useStore();
+
+  useEffect(() => {
+    getTotal();
+  }, []);
 
   return (
     <section className="mt-40 m-auto w-[90%] md:w-[80%]  p-10">
@@ -37,7 +42,7 @@ const AddToCart = () => {
           )}
           <div className="text-end mt-10 ">
             <h1 className="font-bold text-2xl">Subtotal:</h1>
-            {/* <p className='font-semibold text-xl'>₱ {totalPrice + ".00"}</p> */}
+            <p className="font-semibold text-xl">₱ {total + ".00"}</p>
           </div>
         </div>
       </main>

@@ -1,9 +1,10 @@
-import { useContext } from "react";
 import { Link } from "react-router-dom";
-import { CartContext } from "../../Hooks/CartContext";
+import useStore from "../../zustand/store";
 import AllProducts from "../../api/Products";
 
 const MensClothing = () => {
+  const { addToCart } = useStore();
+
   const filterItems = AllProducts.filter(
     (items) => items.category === "men's clothing"
   );

@@ -1,9 +1,10 @@
-import { useContext } from "react";
 import { Link } from "react-router-dom";
-import { CartContext } from "../../Hooks/CartContext";
+import useStore from "../../zustand/store";
 import AllProducts from "../../api/Products";
 
 const MensClothing = () => {
+  const { addToCart } = useStore();
+
   const filterItems = AllProducts.filter(
     (items) => items.category === "backpack"
   );
@@ -21,12 +22,12 @@ const MensClothing = () => {
               to={`/categories/product/${items.id}`}
             >
               <div className="h-[200px] flex justify-center">
-                  <img
-                    className="h-full rounded-t-md p-4 "
-                    src={items.image}
-                    alt={items.name}
-                  />
-                </div>
+                <img
+                  className="h-full rounded-t-md p-4 "
+                  src={items.image}
+                  alt={items.name}
+                />
+              </div>
             </Link>
 
             <div className="p-2 flex flex-col">

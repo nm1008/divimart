@@ -1,7 +1,10 @@
 import Products from "../api/Products";
 import { Link } from "react-router-dom";
+import useStore from "../zustand/store";
 
 const TopItems = () => {
+  const { addToCart } = useStore();
+
   const filterItems = Products.filter((items) => {
     return items;
   });
@@ -37,7 +40,12 @@ const TopItems = () => {
                 <span className="font-semibold tracking-wide">
                   ₱ {items.price}.00
                 </span>
-                <button className="bg-slate-900 text-white mt-2 py-1">
+                <button
+                  className="bg-slate-900 text-white mt-2 py-1"
+                  onClick={() => {
+                    addToCart(items);
+                  }}
+                >
                   Add to Cart
                 </button>
               </div>

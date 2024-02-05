@@ -13,26 +13,23 @@ import Electronics from "./Pages/Categories/Electronics";
 import Jewelry from "./Pages/Categories/Jewelry";
 import MensClothing from "./Pages/Categories/MensClothing";
 import Footer from "./components/Footer";
-import { CartProvider } from "./Hooks/CartContext";
 
 function App() {
   return (
     <>
-      <CartProvider>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/products" element={<Products />}>
-            <Route path="AllProducts" element={<AllProducts />} />
-            <Route path="Backpack" element={<Backpack />} />
-            <Route path="Electronics" element={<Electronics />} />
-            <Route path="Jewelry" element={<Jewelry />} />
-            <Route path="MensClothing" element={<MensClothing />} />
-          </Route>
-          <Route path="/cart" element={<AddToCart />} />
-        </Routes>
-        <Footer />
-      </CartProvider>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/products" element={<Products />}>
+          <Route path="AllProducts" element={<AllProducts />} />
+          <Route path="Backpack" element={<Backpack />} />
+          <Route path="Electronics" element={<Electronics />} />
+          <Route path="Jewelry" element={<Jewelry />} />
+          <Route path="MensClothing" element={<MensClothing />} />
+        </Route>
+        <Route path="/cart" element={<AddToCart />} />
+      </Routes>
+      <Footer />
     </>
   );
 }

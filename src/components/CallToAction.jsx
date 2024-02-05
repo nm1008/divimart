@@ -18,7 +18,7 @@ const CallToAction = () => {
               </p>
               <div className="flex justify-center md:block ">
                 <Link
-                  to="/"
+                  to="/products/AllProducts"
                   className="bg-slate-900 text-white px-2 py-2 rounded-md mt-2 "
                 >
                   Shop Now

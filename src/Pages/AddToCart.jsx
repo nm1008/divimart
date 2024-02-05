@@ -8,7 +8,7 @@ const AddToCart = () => {
 
   useEffect(() => {
     getTotal();
-  }, []);
+  }, [getTotal]);
 
   return (
     <section className="mt-40 m-auto w-[90%] md:w-[80%]  p-10">

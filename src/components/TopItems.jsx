@@ -23,7 +23,7 @@ const TopItems = () => {
             >
               <Link
                 className="flex justify-center "
-                to={`/categories/product/${items.id}`}
+                to={`/product/${items.id}`}
               >
                 <div className="h-[200px]">
                   <img

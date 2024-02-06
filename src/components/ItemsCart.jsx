@@ -10,7 +10,7 @@ const ItemsCart = () => {
           className="md:flex items-center justify-around mb-10 bg-white p-5 rounded-md"
           key={i}
         >
-          <div className="sm:w-full md:w-[250px]">
+          <div className="w-full md:w-[250px]">
             <img
               className="w-full h-full object-cover"
               src={item.image}

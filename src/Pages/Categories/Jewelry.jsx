@@ -20,7 +20,7 @@ const Jewelry = () => {
           >
             <Link
               onClick={() => window.top(0, 0)}
-              to={`/categories/product/${items.id}`}
+              to={`/product/${items.id}`}
             >
               <div className="h-[200px] flex justify-center">
                 <img

@@ -12,6 +12,7 @@ import Backpack from "./Pages/Categories/Backpack";
 import Electronics from "./Pages/Categories/Electronics";
 import Jewelry from "./Pages/Categories/Jewelry";
 import MensClothing from "./Pages/Categories/MensClothing";
+import ProductPage from "./Pages/ProductPage";
 import Footer from "./components/Footer";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           <Route path="MensClothing" element={<MensClothing />} />
         </Route>
         <Route path="/cart" element={<AddToCart />} />
+        <Route path="/product/:id" element={<ProductPage />} />
       </Routes>
       <Footer />
     </>

@@ -13,10 +13,9 @@ const ProductPage = () => {
 
   const item = Products.filter((item) => item.id === parseInt(id));
 
-  const [quantity, setQuantity] = useState(1);
   const [image, setImage] = useState(item[0].image);
 
-  const { addToCart } = useStore();
+  const { addToCart, quantity, setQuantity } = useStore();
 
   return (
     <>
@@ -50,7 +49,7 @@ const ProductPage = () => {
                     className="bg-zinc-100 px-2 py-1 text-md flex justify-center items-center active:opacity-75"
                     onClick={() => setQuantity(quantity - 1)}
                   >
-                    <AiTwotoneMinusCircle className="" />
+                    <AiTwotoneMinusCircle />
                   </button>
                   <p className="text-md px-5 py-1 text-center border">
                     {quantity}
@@ -62,7 +61,9 @@ const ProductPage = () => {
                     <AiTwotonePlusCircle />
                   </button>
                 </div>
-                <p className="product-price text-md font-semibold">₱XXX.00</p>
+                <p className="product-price text-md font-semibold">
+                  ₱{item[0].price * quantity}.00
+                </p>
               </div>
               {/* BUTTONS FOR CART */}
               <div className="flex justify-center gap-2 items-center mt-10">
@@ -74,9 +75,11 @@ const ProductPage = () => {
                 >
                   Add to Cart
                 </button>
-                <button className="px-5 py-1 bg-zinc-100 sm:text-md md:text-xl">
-                  Check Out
-                </button>
+                <a href="/cart">
+                  <button className="px-5 py-1 bg-zinc-100 sm:text-md md:text-xl">
+                    Check Out
+                  </button>
+                </a>
               </div>
               <DeliveryDetails />
             </div>

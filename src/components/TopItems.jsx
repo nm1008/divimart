@@ -18,12 +18,13 @@ const TopItems = () => {
         {filterItems.map((items) => {
           return (
             <div
-              className="bg-white space-y-4 pb-2 shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-t-md hover:scale-105 transition ease-in-out duration-300 "
+              className="h-full space-y-4 pb-2 shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-t-md hover:scale-105 transition ease-in-out duration-300 "
               key={items.id}
             >
               <Link
                 className="flex justify-center "
                 to={`/product/${items.id}`}
+                onClick={() => window(0, 0)}
               >
                 <div className="h-[200px]">
                   <img
@@ -34,20 +35,24 @@ const TopItems = () => {
                 </div>
               </Link>
 
-              <div className="p-2 flex flex-col">
-                <h1 className="font-semibold mb-2">{items.name}</h1>
-                <p className="mb-2">{items.description}</p>
-                <span className="font-semibold tracking-wide">
-                  ₱ {items.price}.00
-                </span>
-                <button
-                  className="bg-slate-900 text-white mt-2 py-1"
-                  onClick={() => {
-                    addToCart(items);
-                  }}
-                >
-                  Add to Cart
-                </button>
+              <div className="p-4 flex flex-col justify-between  md:h-1/2 ">
+                <div>
+                  <h1 className="font-semibold mb-2">{items.name}</h1>
+                  <p className="mb-2">{items.description}</p>
+                </div>
+                <div className="flex flex-col ">
+                  <span className="font-semibold tracking-wide">
+                    ₱ {items.price}.00
+                  </span>
+                  <button
+                    className="bg-slate-900 text-white mt-2 py-1 "
+                    onClick={() => {
+                      addToCart(items);
+                    }}
+                  >
+                    Add to Cart
+                  </button>
+                </div>
               </div>
             </div>
           );

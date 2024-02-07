@@ -20,6 +20,7 @@ const CallToAction = () => {
                 <Link
                   to="/products/AllProducts"
                   className="bg-slate-900 text-white px-2 py-2 rounded-md mt-2 "
+                  onClick={() => window(0, 0)}
                 >
                   Shop Now
                 </Link>

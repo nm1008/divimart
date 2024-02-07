@@ -3,8 +3,11 @@ import TopItems from "../components/TopItems";
 import CallToAction from "../components/CallToAction";
 import CarouselPromotion from "../components/CarouselPromotion";
 import Footer from "../components/Footer";
+import useStore from "../zustand/store";
 
 const Home = () => {
+  const { setItemName } = useStore();
+
   return (
     <>
       <section className="my-10 mx-auto md:w-[80%] w-[90%] relative">
@@ -13,8 +16,9 @@ const Home = () => {
         </h1>
         <div className="h-[100vh] grid md:grid-cols-2 xl:grid-cols-3 gap-2 ">
           <Link
-            to="/products/backpacks"
+            to="./products/Backpacks"
             className="relative overflow-hidden col-span-2  "
+            onClick={() => setItemName("Backpacks")}
           >
             <img
               className="w-full h-full object-cover  "
@@ -25,15 +29,21 @@ const Home = () => {
             </h1>
           </Link>
           <Link
-            to="/products/jewelry"
+            to="./products/Jewelries"
             className="relative overflow-hidden row-span-2"
+            onClick={() => setItemName("Jewelries")}
           >
             <img className="w-full h-full   " src="../src/images/jewelry.jpg" />
             <h1 className="absolute top-0 left-0 bg-slate-900 text-white p-3 font-semibold">
               Jewelry
             </h1>
           </Link>
-          <Link to="/products/clothing" className="relative overflow-hidden ">
+          <Link
+            to="./products/MensClothing
+          "
+            className="relative overflow-hidden "
+            onClick={() => setItemName("Men's Clothing")}
+          >
             <img
               className="w-full h-full object-cover "
               src="../src/images/clothing.jpg"
@@ -42,7 +52,11 @@ const Home = () => {
               Clothing
             </h1>
           </Link>
-          <Link to="/products/gadgets" className="relative overflow-hidden ">
+          <Link
+            to="./products/Electronics"
+            className="relative overflow-hidden "
+            onClick={() => setItemName("Electronics")}
+          >
             <img
               className="w-full h-full object-cover "
               src="../src/images/gadgets.jpg"

@@ -23,9 +23,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />}>
           <Route path="AllProducts" element={<AllProducts />} />
-          <Route path="Backpack" element={<Backpack />} />
+          <Route path="Backpacks" element={<Backpack />} />
           <Route path="Electronics" element={<Electronics />} />
-          <Route path="Jewelry" element={<Jewelry />} />
+          <Route path="Jewelries" element={<Jewelry />} />
           <Route path="MensClothing" element={<MensClothing />} />
         </Route>
         <Route path="/cart" element={<AddToCart />} />
@@ -37,3 +37,4 @@ function App() {
 }
 
 export default App;
+

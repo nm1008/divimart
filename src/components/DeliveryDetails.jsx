@@ -1,5 +1,3 @@
-import React from 'react'
-
 const DeliveryDetails = () => {
   return (
     <section className="flex flex-col  border p-2 rounded-xl mt-5">
@@ -21,12 +19,12 @@ const DeliveryDetails = () => {
           <i className="fa-solid fa-location-arrow"></i>
         </div>
         <div>
-          <h1 className="font-bold">Pasay City</h1>
+          <h1 className="font-bold">Metro Manila</h1>
           <p className="font-semibold">🟢 Store -In stock</p>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default DeliveryDetails
+export default DeliveryDetails;

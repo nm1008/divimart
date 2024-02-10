@@ -15,10 +15,9 @@ const AddToCart = () => {
       <main>
         <h1 className="text-3xl font-semibold tracking-wide">
           Your Cart ({cartItems.length}) 🛒{" "}
-          {/*Show the Number of Items in the Cart */}
         </h1>
         <div className="cart-body mt-20">
-          {cartItems.length < 1 ? ( // Add Condition if the Cart is Empty (below 1 items) show the Cart is Empty else import the component (<ItemCarts/>)
+          {cartItems.length < 1 ? (
             <div className="flex flex-col items-center justify-center ">
               <h1 className="text-center font-bold tracking-wide text-2xl">
                 Your Cart is Empty <span className="absolute">😪</span>

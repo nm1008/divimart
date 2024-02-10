@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 const CallToAction = () => {
   return (
-    <section className="mt-20 md:mt-40 mx-auto  relative">
-      <div className="my-20 ">
+    <section className="mt-20 md:mt-40 mx-auto relative">
+      <div className="my-20">
         <div className="flex bg-white items-center py-10  h-[350px] md:h-[400px] overflow-hidden shadow-[0_3px_10px_rgb(0,0,0,0.2)] ">
           <div className=" w-full flex flex-col items-center ">
             <div className="mx-auto w-[80%] md:w-[50%]">

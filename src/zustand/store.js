@@ -15,6 +15,12 @@ const useStore = create((set) => ({
       return { ...state, total: total };
     });
   },
+  removeItem: (itemId) => {
+    set((state) => {
+      const items = state.cartItems.filter((item) => item.id !== itemId)
+      return { ...state, cartItems: items}
+    })
+  },
 }));
 
 export default useStore;

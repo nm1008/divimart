@@ -2,7 +2,7 @@ import useStore from "../zustand/store";
 import { FaRegTrashAlt } from "react-icons/fa";
 
 const ItemsCart = () => {
-  const { cartItems } = useStore();
+  const { cartItems, removeItem } = useStore();
 
   return (
     <section className="border">
@@ -22,7 +22,7 @@ const ItemsCart = () => {
             <h1 className="text-2xl text-center font-bold">{item.name}</h1>
             <p className="text-center font-semibold">{item.description}</p>
             <div className="mt-5 mx-auto w-[70%]">
-              <div className="flex gap-2 cursor-pointer">
+              <div className="flex gap-2 cursor-pointer" onClick={() => removeItem(item.id)}>
                 <button>
                  <FaRegTrashAlt />
                 </button>

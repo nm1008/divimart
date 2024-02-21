@@ -70,7 +70,7 @@ const Home = () => {
         <CallToAction />
         <CarouselPromotion />
       </section>
-      <Footer />
+     
     </>
   );
 };

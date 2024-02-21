@@ -22,7 +22,7 @@ const Home = () => {
           >
             <img
               className="w-full h-full object-cover  "
-              src="../src/images/backpack.jpg"
+              src="../public/images/backpack.jpg"
             />
             <h1 className="absolute top-0 left-0 bg-slate-900 text-white p-3 font-semibold">
               Backpacks
@@ -33,7 +33,7 @@ const Home = () => {
             className="relative overflow-hidden row-span-2"
             onClick={() => setItemName("Jewelries")}
           >
-            <img className="w-full h-full   " src="../src/images/jewelry.jpg" />
+            <img className="w-full h-full   " src="../public/images/jewelry.jpg" />
             <h1 className="absolute top-0 left-0 bg-slate-900 text-white p-3 font-semibold">
               Jewelry
             </h1>
@@ -46,7 +46,7 @@ const Home = () => {
           >
             <img
               className="w-full h-full object-cover "
-              src="../src/images/clothing.jpg"
+              src="../public/images/clothing.jpg"
             />
             <h1 className="absolute top-0 left-0 bg-slate-900 text-white p-3 font-semibold">
               Clothing
@@ -59,7 +59,7 @@ const Home = () => {
           >
             <img
               className="w-full h-full object-cover "
-              src="../src/images/gadgets.jpg"
+              src="../public/images/gadgets.jpg"
             />
             <h1 className="absolute top-0 left-0 bg-slate-900 text-white p-3 font-semibold">
               Gadgets

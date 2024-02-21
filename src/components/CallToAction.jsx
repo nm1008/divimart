@@ -31,7 +31,7 @@ const CallToAction = () => {
             <div className="h-full w-full">
               <img
                 className="w-full h-full object-cover"
-                src="../public/images/cta.jpg"
+                src="/images/cta.jpg"
                 alt="cta-pic"
               />
             </div>

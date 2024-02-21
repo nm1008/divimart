@@ -25,7 +25,7 @@ const AddToCart = () => {
               <div className="sm:w-[300px] md:w-[350px] mt-20">
                 <img
                   className="w-full h-full object-cover"
-                  src="../src/images/empty-cart.svg"
+                  src="/images/empty-cart.svg"
                   alt="empty cart image"
                 />
               </div>

@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import TopItems from "../components/TopItems";
 import CallToAction from "../components/CallToAction";
 import CarouselPromotion from "../components/CarouselPromotion";
-import Footer from "../components/Footer";
 import useStore from "../zustand/store";
 
 const Home = () => {
@@ -22,7 +21,7 @@ const Home = () => {
           >
             <img
               className="w-full h-full object-cover  "
-              src="../public/images/backpack.jpg"
+              src="/images/backpack.jpg"
             />
             <h1 className="absolute top-0 left-0 bg-slate-900 text-white p-3 font-semibold">
               Backpacks
@@ -33,7 +32,7 @@ const Home = () => {
             className="relative overflow-hidden row-span-2"
             onClick={() => setItemName("Jewelries")}
           >
-            <img className="w-full h-full   " src="../public/images/jewelry.jpg" />
+            <img className="w-full h-full   " src="/images/jewelry.jpg" />
             <h1 className="absolute top-0 left-0 bg-slate-900 text-white p-3 font-semibold">
               Jewelry
             </h1>
@@ -46,7 +45,7 @@ const Home = () => {
           >
             <img
               className="w-full h-full object-cover "
-              src="../public/images/clothing.jpg"
+              src="/images/clothing.jpg"
             />
             <h1 className="absolute top-0 left-0 bg-slate-900 text-white p-3 font-semibold">
               Clothing
@@ -59,7 +58,7 @@ const Home = () => {
           >
             <img
               className="w-full h-full object-cover "
-              src="../public/images/gadgets.jpg"
+              src="/images/gadgets.jpg"
             />
             <h1 className="absolute top-0 left-0 bg-slate-900 text-white p-3 font-semibold">
               Gadgets
@@ -70,7 +69,6 @@ const Home = () => {
         <CallToAction />
         <CarouselPromotion />
       </section>
-     
     </>
   );
 };

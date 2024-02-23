@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import useStore from "../zustand/store";
 
 const TopItems = () => {
-  const { addToCart } = useStore();
+  const { addToCart, notify } = useStore();
 
   const filterItems = Products.filter((items) => {
     return items;
@@ -47,7 +47,8 @@ const TopItems = () => {
                   <button
                     className="bg-slate-900 text-white mt-2 py-1 "
                     onClick={() => {
-                      addToCart(items);
+                      addToCart(items)
+                      notify();
                     }}
                   >
                     Add to Cart

@@ -15,6 +15,8 @@ import MensClothing from "./Pages/Categories/MensClothing";
 import ProductPage from "./Pages/ProductPage";
 import Footer from "./components/Footer";
 
+import { Toaster } from "react-hot-toast";
+
 function App() {
   return (
     <>
@@ -31,6 +33,7 @@ function App() {
         <Route path="/cart" element={<AddToCart />} />
         <Route path="/product/:id" element={<ProductPage />} />
       </Routes>
+      <Toaster />
       <Footer />
     </>
   );

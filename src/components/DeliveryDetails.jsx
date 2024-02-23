@@ -14,7 +14,6 @@ const DeliveryDetails = () => {
       </div>
       <div className="flex items-start gap-2 p-2">
         {" "}
-        {/* Location */}
         <div>
           <i className="fa-solid fa-location-arrow"></i>
         </div>

@@ -4,6 +4,7 @@ import CallToAction from "../components/CallToAction";
 import CarouselPromotion from "../components/CarouselPromotion";
 import useStore from "../zustand/store";
 
+
 const Home = () => {
   const { setItemName } = useStore();
 
@@ -66,6 +67,7 @@ const Home = () => {
           </Link>
         </div>
         <TopItems />
+    
         <CallToAction />
         <CarouselPromotion />
       </section>

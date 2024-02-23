@@ -3,7 +3,7 @@ import useStore from "../../zustand/store";
 import AllProducts from "../../api/Products";
 
 const MensClothing = () => {
-  const { addToCart } = useStore();
+  const { addToCart, notify } = useStore();
 
   const filterItems = AllProducts.filter(
     (items) => items.category === "men's clothing"
@@ -37,6 +37,7 @@ const MensClothing = () => {
               <button
                 onClick={() => {
                   addToCart(items);
+                  notify()
                 }}
                 className="bg-slate-900 text-white mt-2 py-1"
               >

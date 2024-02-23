@@ -4,7 +4,7 @@ import useStore from "../../zustand/store";
 import AllProducts from "../../api/Products";
 
 const Jewelry = () => {
-  const { addToCart } = useStore();
+  const { addToCart, notify } = useStore();
 
   const filterItems = AllProducts.filter(
     (items) => items.category === "jewelry"
@@ -38,6 +38,7 @@ const Jewelry = () => {
               <button
                 onClick={() => {
                   addToCart(items);
+                  notify();
                 }}
                 className="bg-slate-900 text-white mt-2 py-1"
               >

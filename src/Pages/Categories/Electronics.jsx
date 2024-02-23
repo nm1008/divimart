@@ -3,7 +3,7 @@ import useStore from "../../zustand/store";
 import AllProducts from "../../api/Products";
 
 const Electronics = () => {
-  const { addToCart } = useStore();
+  const { addToCart, notify } = useStore();
 
   const filterItems = AllProducts.filter(
     (items) => items.category === "electronics"
@@ -35,9 +35,10 @@ const Electronics = () => {
               <p>{items.description}</p>
               <span className="font-bold">₱{items.price}.00</span>
               <button
-                // onClick={() => {
-                //   addToCart(items);
-                // }}
+                onClick={() => {
+                  addToCart(items);
+                  notify();
+                }}
                 className="bg-slate-900 text-white mt-2 py-1"
               >
                 Add to Cart

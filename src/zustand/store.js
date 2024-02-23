@@ -1,4 +1,5 @@
 import { create } from "zustand";
+import toast from "react-hot-toast";
 
 const useStore = create((set) => ({
   cartItems: [],
@@ -17,10 +18,11 @@ const useStore = create((set) => ({
   },
   removeItem: (itemId) => {
     set((state) => {
-      const items = state.cartItems.filter((item) => item.id !== itemId)
-      return { ...state, cartItems: items}
-    })
+      const items = state.cartItems.filter((item) => item.id !== itemId);
+      return { ...state, cartItems: items };
+    });
   },
+  notify: () => toast("Item has been added to the cart"),
 }));
 
 export default useStore;
